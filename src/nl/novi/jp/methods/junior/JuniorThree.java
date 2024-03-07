@@ -9,15 +9,21 @@ package nl.novi.jp.methods.junior;
  * Lukt dat niet, dan je mag elk willekeurig getal gebruiken.
  */
 
+//O geeft negatief met alleen >0. == 0 is toegevoegd.
 public class JuniorThree {
     public static void main(String[] args) {
+        negativeNumberChecker(0);
 
     }
 
     public static void negativeNumberChecker(int number) {
         if(number > 0) {
             System.out.println(number + " is een positief getal.");
-        } else {
+        }
+        if(number == 0){
+            System.out.println(number + " is nul");
+        }
+        else {
             System.out.println(number + " is een negatief getal.");
         }
     }
